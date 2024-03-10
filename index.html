@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="birthdayCard">
+    <div class="birthdayCard" id="birthdayCard">
         <div class="cardFront">
             <div class="front-text">
             <h3 class="happy">Olá</h3>
@@ -42,5 +42,15 @@
             </div>
           </div>
         </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            var birthdayCard = document.getElementById("birthdayCard");
+            
+            birthdayCard.addEventListener("click", function() {
+              birthdayCard.classList.toggle("flipped");
+            });
+          });
+          </script>
 </body>
 </html>
